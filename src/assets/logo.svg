@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="0.213333in" height="0.213333in"
+     viewBox="0 0 64 64">
+  <path id="moonlogo"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 26.09,30.55
+           C 33.91,20.27 49.82,5.36 54.09,1.45
+             -21.36,1.73 -11.29,64.83 55.09,61.73
+             51.18,58.18 35.36,42.45 26.09,30.55 Z" />
+</svg>
