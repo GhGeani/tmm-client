@@ -1,6 +1,6 @@
 <template lang="pug">
 article.col-12.col-md-6.offset-md-3
-    p.font-italic „{{ description }}”
+    p.quote „{{ description }}”
     p.text-center.small {{ author }}
       | {{ date }}
 </template>
@@ -15,8 +15,3 @@ export default {
   },
 };
 </script>
-<style lang="stylus" scoped>
-article
-  p:first-child
-    font-family: 'Indie Flower', cursive;
-</style>
