@@ -6,7 +6,7 @@
      width="0.213333in" height="0.213333in"
      viewBox="0 0 64 64">
   <path id="moonlogo"
-        fill="none" stroke="black" stroke-width="1"
+        fill="#e6b00c" stroke="#e6b00c" stroke-width="1"
         d="M 26.09,30.55
            C 33.91,20.27 49.82,5.36 54.09,1.45
              -21.36,1.73 -11.29,64.83 55.09,61.73
