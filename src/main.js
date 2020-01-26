@@ -2,6 +2,8 @@ import Vue from 'vue';
 import axios from 'axios';
 import App from './App.vue';
 
+import router from './router/router';
+
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,4 +19,5 @@ if (process.env.NODE_ENV === 'production') {
 
 new Vue({
   render(h) { return h(App); },
+  router,
 }).$mount('#app');
