@@ -56,9 +56,9 @@ $oxford-blue = rgba(11, 29, 81, 1)
   z-index 10
   background-image radial-gradient(
     circle,
-    alpha($oxford-blue, 0.6),
-    alpha($oxford-blue, 0.8),
-    $oxford-blue)
+    alpha(black, 0.4),
+    alpha(black, 0.9),
+    alpha(black, 1))
 .tmm-btn
   transition all .2s ease-in-out
   display block
