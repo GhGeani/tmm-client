@@ -1,5 +1,5 @@
 <template lang="pug">
-  main.conainer.h-100
+  main.conainer.h-100#landing
     .row.h-100.align-items-center.justify-content-center
       cloud#c1
       cloud#c2
@@ -18,29 +18,9 @@ import cloud from '../components/cloud.vue';
 import lettersList from '../components/lettersList.vue';
 
 export default {
-  data() {
-    return {
-      data: [],
-      status: '',
-    };
-  },
   components: {
     lettersList,
     cloud,
-  },
-  mounted() {
-    this.handleResponse();
-  },
-  methods: {
-    async handleResponse() {
-      try {
-        const response = await this.$http(`${this.$url}/articles`);
-        this.data = response.data;
-        this.status = response.status;
-      } catch (error) {
-        this.data = error.response.data.error;
-      }
-    },
   },
 };
 </script>

@@ -1,8 +1,6 @@
 <template lang="pug">
-article.col-12.col-md-6.offset-md-3
-    p.quote „{{ description }}”
-    p.text-center.small {{ author }}
-      | {{ date }}
+article
+  span.quote.mx-5 „{{ description }}”
 </template>
 
 <script>

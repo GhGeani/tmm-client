@@ -1,13 +1,22 @@
 <template lang="pug">
-main
-  .container(v-for="lets in letters" :key="lets.id")
-    letter(
-    :description="lets.description"
-    :author="lets.author"
-    :date="lets.date"
-    :id="lets.id"
-    :key="lets.id")
-    p.text-center.display-4.text-muted ___
+main.container-fluid.bg-dark
+  .carousel.vh-100#carousel(data-ride="carousel" data-interval="false")
+    ol.carousel-indicators(v-for="(lets, index) in letters")
+      li(:class="{active: index===0}")
+    a.carousel-control-prev#prev(
+      href="#carousel" role="button" data-slide="prev")
+    .carousel-inner.overflow-auto.vh-100#letter(role="listbox")
+      .container
+        letter.carousel-item(
+        v-for="(lets, index) in letters"
+        :class="{active: index===0}"
+        :description="lets.description"
+        :author="lets.author"
+        :date="lets.date"
+        :id="lets.id"
+        :key="lets.id")
+    a.carousel-control-next#next(
+      href="#carousel" role="button" data-slide="next")
 </template>
 
 <script>
@@ -24,10 +33,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@media (min-width: 576px)
-  .card-columns
-    column-count 1
-@media (min-width: 768px)
-  .card-columns
-    column-count 2
+#prev:hover
+  background-color red
 </style>

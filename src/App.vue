@@ -42,12 +42,12 @@ $oxford-blue = rgba(11, 29, 81, 1)
 // TYPOGRAPHY
 .quote
   font-family 'Indie Flower', cursive
-  font-size 24px
+  font-size 1.1rem
   color $dark-vanila
   font-style italic
 
 // DISPLAY APP ALWAYS FULL SCREEN
-#app
+#landing
   position fixed
   width  100%
   height 100%
@@ -72,4 +72,5 @@ $oxford-blue = rgba(11, 29, 81, 1)
   &:active
     transition 0.2s
     transform scale(.95)
+
 </style>
