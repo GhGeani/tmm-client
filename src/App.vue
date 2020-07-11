@@ -1,6 +1,5 @@
 <template lang="pug">
   #app
-    nav-bar
     router-view
 </template>
 
